@@ -1,174 +1,179 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[margin, 11pt]{res}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
+% \usepackage{feynmf}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
 
-% Adjust margins
+\usepackage{fontspec}
+
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold},DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\textheight}{0.5in}
 
-\urlstyle{same}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+\pagenumbering{gobble}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\definecolor{darkcerulean}{rgb}{0.03, 0.27, 0.49}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\hypersetup{colorlinks=true, urlcolor=darkcerulean}
 
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+\newcommand{\li}{https://linkedin.com/in/jakegut}
+\newcommand{\gh}{https://github.com/jakegut}
+\newcommand{\personalsite}{https://jakegut.com}
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+\newsectionwidth{1in}
+
+
+
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+
+\begin{tabular*}{1.01\textwidth}{@{\hspace{-4pt}}l @{\extracolsep{\fill}} r}
+\textbf{#1} & #2 \\
+      {#3} &  {#4}
+\end{tabular*}\vspace{-2pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={$\bullet$}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[label={$\bullet$}]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubSubheading}[2]{
+\begin{tabular*}{1.01\textwidth}{@{\hspace{-4pt}}l @{\extracolsep{\fill}} r}
+    #1 & #2 
+\end{tabular*}\vspace{-7pt}
+}
 
-% Resume Starts Here
+% if using pdflatex:
+% \setlength{\pdfpagewidth}{\paperwidth}
+% \setlength{\pdfpageheight}{\paperheight}
+%
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+	    \small
+		\setlength{\itemsep}{0in}
+		\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+		\setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+		\setlength{\leftmargin}{0.2in}}}{\end{list}}
+
 \begin{document}
 
-%-----------HEADING-----------
-\begin{center}
-    \textbf{\Huge \scshape Harish Vadaparty} \\ \vspace{1pt}
-    \href{https://hvadaparty-com.vercel.app/}{\underline{hvadaparty-com.vercel.app/}} $|$ \href{mailto:harishvadaparty@gmail.com}{\underline{harishvadaparty@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/harishvadaparty/}{\underline{linkedin.com/in/harishvadaparty/}} $|$
-    \href{https://github.com/Harryalways317}{\underline{github.com/Harryalways317}}
-    
-    
-\end{center}
+\name{
+	{\Huge \scshape Harish Vadaparty}
+	\vspace{2pt}
+	}
+\address{
+    \small +91-6301786793 $|$ 
+    \href{mailto:harishvadapartygmail.com}{harishvadaparty@gmail.com} $|$ 
+    \href{\li}{linkedin.com/in/harishvadaparty} $|$
+    \href{\gh}{github.com/Harryalways317}
+}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Lendi Institute of Engineering \& Technology}{Visakhapatnam, India}
-      {Bachelor of Technology in Computer Science \& Engineering; CGPA: 8.0/10.0}{2018 -- 2022}
-    \resumeSubheading
-      {Bhashyam Junior College}{Visakhapatnam, India}
-      {XIIth Standard, Ap State Board; Percentage: 95\%}{2017 -- 2018}
-  \resumeSubHeadingListEnd
+\begin{resume}
+% \section{\sc Contact Information}
+% \vspace{.05in}
+% \begin{tabular}{@{}p{3.17in}p{4in}}
+% 	\href{\li}{linkedin.com/in/jakegut} & \href{\gh}{github.com/jakegut}\\
+%     \href{mailto:jakegut0108@gmail.com}{jakegut0108@gmail.com} & \href{\personalsite}{jakegut.com}\\
+%      (979) 676-3030
+%     %  (123) 456-7890
+%         % & Available to start from Nov 1st\\
+% \end{tabular}
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Software Engineer (Backend \& Data)}{Jul 2022 -- Present}
-      {Hexon Global}{Bangalore}
-      \resumeItemListStart
-        \resumeSubItem{Project: \textbf{Mastbazaar.com}}
-        \resumeItemListStart
-          \resumeItem{Led backend development for a grocery delivery app's Orders and Delivery Microservice using Python and Node.js. Managed Order and Subscriptions, route planning, delivery sheet generation.}
-          \resumeItem{Engineered a multi-channel notification system (email, SMS, in-app) for real-time order and delivery updates.}
-          \resumeItem{Integrated Point of Sale system with online orders, enhancing order processing and inventory management efficiency.}
-          \resumeItem{Implemented Elasticsearch, boosting product search accuracy and speed.}
-        \resumeItemListEnd
-        \resumeSubItem{Project: \textbf{Oddzy}}
-        \resumeItemListStart
-          \resumeItem{Back-end development for a web3 crypto trading platform. Created REST APIs and Websockets for User and Admin for Platform Interaction and scaled them for 10k active users}
-          \resumeItem{Developed a Liquidity Engine for efficient order matching, and collaborated on a high-performance order matching trade engine.}
-          \resumeItem{Played a key role in designing the system architecture and developing the database schema, ensuring optimal scalability and robustness in service performance.}
-          \resumeItem{Integrated Alchemy SDK and MoonPay for web2 and web3 financial transactions.}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\section{\sc Work Experience}
 
-    % Board Infinity Internship
-    \resumeSubheading
-      {SDE Intern (Frontend)}{Mar 2022 -- Jun 2022}
-      {Board Infinity}{Mumbai}
-      \resumeItemListStart
-        \resumeItem{Transitioned an app from React Native to Flutter, improving performance and UI.}
-        \resumeItem{Integrated features like LMS, Discussion Forum, and Events into the EdTech App.}
-        \resumeItem{Implemented Sentry, UXCam, and Firebase Notifications for enhanced monitoring and user engagement.}
-      \resumeItemListEnd
+\vspace{2pt}
 
-    % Futuryze Digital Venture Studio Internship
-    \resumeSubheading
-      {Software Developer - Intern}{June 2021 -- Jan 2022}
-      {Futuryze Digital Venture Studio}{Bangalore}
-      \resumeItemListStart
-        \resumeItem{Developed an educational app with GetX and Bloc, tailored for Learners and Creators.}
-        \resumeItem{Translated client needs into app features, using API integration and MVVM architecture.}
-        \resumeItem{Improved app performance by 50\% through optimized data fetching and caching.}
-      \resumeItemListEnd
+\resumeSubheading{{\bf Hexon Labs}}{Bangalore, IN}
+                 {Software Engineer, Backend and Data}{Jul. 2022 -- Present}
 
-  \resumeSubHeadingListEnd
+\begin{list2}
+\item{Led Backend Development to an established Grocery application with AWS backend, Node.js, and TypeScript}
+\item{Build microservices with Python,Node to  manage orders/subscriptions, products, and deliveries}
+\item{Developed sync scripts to keep multiple services, stock, prices and store Point of Sale systems in sync}
+\item{Created Service Applications for Email,SMS,In-App,Notification,Cart Vouchers,Delivery Management, Reports(Apache Superset) to help the end users updated and operations team to run things smoothly}
+\item{Integrated Elastic Search that improved search relevancy by 60\% and build recommendation engine to improve discovery with an increase of relevant cart items by 40\% }
+\end{list2}
+\resumeSubheading{{\bf Board Infinity}}{Mumbai, IN}
+                 {Software Engineer Intern}{June 2021 -- Sep. 2022}
+                 
+\begin{list2}
+\item{Contributed to an established Ed Tech application in rewrite from React Native to Flutter with MVVC}
+\item{Developed multiple features on LMS, Blogs, Event and Course Management}
+\item{Implemented UXCam for analytics and notifications pipeline for FCM and Imrpoved animations}
+\item{Rewrote Modules of the app by caching and data reuse which improved performance by 40\%}
+\end{list2}
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={$\bullet$}]
-    \small{\item{
-     \textbf{Languages}{: C/C++, Python, Java, JavaScript/TypeScript, Go, Dart} \\
-     \textbf{Frameworks}{: Flutter, React, Node.js, Gin} \\
-     \textbf{Databases}{: PostgreSQL, Redis, MongoDB} \\
-     \textbf{Cloud Platforms}{: AWS, GCP} \\
-    }}
- \end{itemize}
+\resumeSubheading{{\bf Futuryze Digital}}{Bangalore, IN}
+                 {Software Developer}{June 2020 -- May 2021}
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-
-      \resumeSubItem{\textbf{Distributed Logging Management System (Node.js, Typescript)}}
-        \resumeItemListStart
-          \resumeItem{Developed a Node.js-based distributed logging system for handling logs from multiple services and visualise efficiently.}
-          \resumeItem{Implemented REST API for real-time message logging and interval-based file upload, optimizing log ingestion and management.}
-            \resumeItem{Developed a log visualization tool enabling efficient searching and filtering of logs, enhancing data analysis capabilities.}
-
-          \resumeItem{Implemented Log archival and s3 upload feature for log cleanup after expiry.}
-        \resumeItemListEnd
-
-      \resumeSubItem{\textbf{Black App}}
-    \resumeItemListStart
-      \resumeItem{Led the development of 'BLACK', an innovative brand discovery app, focusing on improving brand discovery by providing offers on emerging brands, that are not available on Big Commerce.}
-      \resumeItem{Built the scalable MVP using Flutter and Firebase with a team of 2 devs and a product guy, quickly reaching 1,000 Daily Active Users (DAU) post-launch.}
-      \resumeItem{Implemented features like product discovery, a live bidding tool, and a daily rewards system, incentivizing users to earn rewards for discounts on various products and brands.You can check it at \url{https://getblack.in/}.}
-    \resumeItemListEnd
+\begin{list2}
+\item{Developed an EdTech platform with Flutter, GetX and Bloc, tailored for Learners and Creators }
+\item{Translated client needs and UX designs into functional app features, implementing API fetching and MVVM architecture and Multiple Modules like Quizzes, Video Content }
+\item{Managed multimedia data integration and implemented file uploads and error handling in the app. }
+\end{list2}
 
 
-      \resumeSubItem{\textbf{Voice Cloning Model with XTTS (Python)}}
-        \resumeItemListStart
-          \resumeItem{Built a Flask-based voice cloning model with XTTS, supporting multiple languages.}
-          \resumeItem{Integrated Celery for queue management, handling multiple concurrent requests efficiently.}
-          \resumeItem{Applied multiprocessing techniques for handling larger text volumes, ensuring consistent performance and scalability.}
-        \resumeItemListEnd
+% \vspace{0.15in}
+\section{\sc Education}
 
-    \resumeSubHeadingListEnd
+\vspace{2pt}
+
+\resumeSubheading{Lendi Institute of Engineering and Techonology}{Vizag, IN}
+             {Bachelor of Techonology in Computer Science}{June 2022}
+
+\section{\sc Projects}
+
+\resumeSubSubheading{\textbf{Any2Any Convertor}}
+{Python, Flask, RabbitMQ, MySQL,MongoDB}
+
+\begin{list2}
+\item {Developed an MP3 extraction and File conversion service with support for pdf to docx/docx to pdf.}
+        \item {Implemented a Gateway for handling authentication, file storage, and processing requests in the queue.}
+        \item {Established an email notification system to inform users upon completion of file processing.}
+        \item {Encapsulated the service in a Kubernetes (K8s) environment for scalability, supporting various conversions and Volume Persistance on failures.}
+\end{list2}
+
+\resumeSubSubheading{\textbf{Job Leads Generator and Staffing Assistant}}
+{Python,LLM,}
+
+\begin{list2}
+ \item Created an end-to-end automated system for identifying potential leads and generating emails.
+        \item Developed web scrapers to extract and clean data about companies with active hiring needs.
+        \item Integrated Langchain \& OpenAI to create personalized email templates based on the scraped data, enhancing outreach for staffing services.
+\end{list2}
 
 
-%-----------ACHIEVEMENTS-----------
-\section{Achievements}
-    \resumeSubHeadingListStart
-      \resumeItem{AWS Certified Cloud Practitioner - Validation Number: WL78T7D25MQQ1C30}
-      % Add more achievements if you have any
-    \resumeSubHeadingListEnd
+\section{\sc Technical Skills}
 
+\textbf{Languages}{: C/C++, Python, Java, JavaScript/TypeScript, Go, Dart} \\
+\textbf{Frameworks}{: Flutter, Node.js, Flask, FastAPI, Express} \\
+\textbf{Tools}{: PostgreSQL, Redis, MongoDB, Elastic Search, AWS} 
+
+\section{\sc Certifications}
+\textbf{AWS Certified Cloud Practitioner - Validation Number}{: WL78T7D25MQQ1C30} \\
+
+\vspace{0.2in}
+
+\end{resume}
 \end{document}
