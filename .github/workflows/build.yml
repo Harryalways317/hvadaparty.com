@@ -33,8 +33,8 @@ jobs:
           cp resume/main.pdf public/resume.pdf
       - name: Push changes to GitHub
         run: |
-          git config --local user.name "Jake Gutierrez"
-          git config --local user.email "jakegut0108@gmail.com"
+          git config --local user.name "Harish Vadaparty"
+          git config --local user.email "harishvadaparty@gmail.com"
 
           git add public resume/artifacts
           git commit -m "[CD] Update resume.pdf"
