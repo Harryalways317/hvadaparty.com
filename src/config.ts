@@ -19,12 +19,12 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialsObject = [
   {
     name: "Github",
-    href: "github.com/Harryalways317",
+    href: "https://github.com/Harryalways317",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "linkedin.com/in/harishvadaparty",
+    href: "https://linkedin.com/in/harishvadaparty",
     active: true,
   },
   {
