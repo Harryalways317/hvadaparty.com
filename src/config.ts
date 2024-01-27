@@ -1,7 +1,7 @@
 import type { SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://jakegut.com",
+  website: "https://hvadaparty.com",
   author: "Harish Vadaparty",
   desc: "A personal website",
   title: "Harish Vadaparty",
@@ -19,22 +19,22 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialsObject = [
   {
     name: "Github",
-    href: "https://github.com/jakegut",
+    href: "github.com/Harryalways317",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.com/in/jakegut",
+    href: "linkedin.com/in/harishvadaparty",
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:jakegut0108@gmail.com",
+    href: "mailto:harishvadapartygmail.com",
     active: true,
   },
-  {
-    name: "Mastodon",
-    href: "https://hachyderm.io/@jakegut",
-    active: true,
-  },
+  // {
+  //   name: "Mastodon",
+  //   href: "https://hachyderm.io/@jakegut",
+  //   active: true,
+  // },
 ];
