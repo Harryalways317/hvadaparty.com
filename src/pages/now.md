@@ -11,10 +11,10 @@ I'm trying to track my progress over at my [digital garden](https://notes.jakegu
 
 In my world I:
 
-- Got my Girl
-- Moved to Katy, TX
+- Started working out at GYM
+- Visited Banglore, Chennai, Hyderabad
 - Hyperfixated on \<special interest\> (it's always changing, checkout the cycle below)
-- Learning the tin whistle
+- Learning guitar
 
 My cycle of special interests:
 
@@ -24,4 +24,4 @@ My cycle of special interests:
 - Compilers and Interpreters
 - FOSS
 
-_Last updated: May 23, 2023. Inspired by [nownownow.com](https://nownownow.com/about)_
+_Last updated: Jan 27, 2024. Inspired by [nownownow.com](https://nownownow.com/about)_
