@@ -13,6 +13,7 @@
     "cz": "cz"
   },
   "dependencies": {
+    "@astro-github-elements/clipboard-copy": "^0.0.4",
     "@astrojs/rss": "^2.4.3",
     "@vercel/analytics": "^1.1.1",
     "astro": "^2.8.3",
