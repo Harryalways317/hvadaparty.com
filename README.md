@@ -1,4 +1,4 @@
-# jakegut.com
+# hvadaparty.com
 
 ## Commands
 
