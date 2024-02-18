@@ -126,11 +126,11 @@ Here is a basic invocation time taken by the lambda function
 
 **Initial Run** (Cold Start Effect)
 
-[![Invocation Time](../assets/images/chromium-initial-run.png)](../assets/images/chromium-initial-run.png)
+[![Invocation Time Initial Run](https://i.postimg.cc/18RVGcBt/chromium-initial-run.png)](https://i.postimg.cc/18RVGcBt/chromium-initial-run.png)
 
 **Subsequent Runs**
 
-[![Invocation Time](../assets/images/chromium-second-run.png)](../assets/images/chromium-second-run.png)
+[![Invocation Time Second Run](https://i.postimg.cc/LJyYNYQV/chromium-second-run.png)](https://i.postimg.cc/LJyYNYQV/chromium-second-run.png)
 
 ## Puppeteer on Docker
 So, in docker, we can actually run chromium easier way, just few extra installations on docker file should be enough
