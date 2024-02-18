@@ -100,3 +100,78 @@ FOR EACH ROW EXECUTE FUNCTION audit_products();
 ```
 
 In this type of setup, every insert, update, or delete operation on the `products` table will trigger the `audit_products` function, capturing the details of the operation in the `product_changes` audit table. This includes all fields of the `products` table, allowing us to track how stock and price change over time along with any other modifications to product data.
+
+### Polling-Based CDC: A Simple Approach
+
+Polling involves scripting a regular check for new or changed data in the database. It's easy but can be resource-heavy, if not implemented optimally.
+
+Here is a simple approach we used to sync sales orders from one db to other for analytics purposes. this can work on cross db or cross server as well. like you can use it to sync between oracle and postgres or other ones, this script needs to be ran as a cron job or a scheduled task.
+
+#### Step 1: Database Setup
+
+First, create or modify a table to store the last sync timestamp. This table will hold a single record indicating the last time the sync was successfully completed.
+
+```sql
+CREATE TABLE sync_log (
+    id SERIAL PRIMARY KEY,
+    last_synced_at TIMESTAMP NOT NULL
+);
+
+-- Initialize with a far past date if no record exists
+INSERT INTO sync_log (last_synced_at) VALUES ('1970-01-01 00:00:00');
+```
+
+#### Step 2: Python Script for Syncing Sales Data
+
+This script fetches the last sync timestamp from the `sync_log` table, uses it to fetch new or updated sales records, processes them, and then updates the `sync_log` with the current timestamp.
+
+```python
+import psycopg2
+import psycopg2.extras
+from datetime import datetime
+
+def get_last_synced_at(cursor):
+    cursor.execute("SELECT last_synced_at FROM sync_log ORDER BY id DESC LIMIT 1;")
+    return cursor.fetchone()[0]
+
+def update_last_synced_at(cursor, timestamp):
+    cursor.execute("UPDATE sync_log SET last_synced_at = %s WHERE id = 1;", (timestamp,))
+
+def fetch_new_sales(cursor, last_synced_at):
+    query = """
+    SELECT * FROM sales
+    WHERE last_modified > %s
+    ORDER BY last_modified ASC;
+    """
+    cursor.execute(query, (last_synced_at,))
+    return cursor.fetchall()
+
+def main():
+    conn = psycopg2.connect(dbname="sales_db", user="db_user", password="db_pass", host="db_host")
+    cursor = conn.cursor()
+
+    try:
+        last_synced_at = get_last_synced_at(cursor)
+        print(f"Last synced at: {last_synced_at}")
+
+        new_sales = fetch_new_sales(cursor, last_synced_at)
+        for sale in new_sales:
+            # Process each sale here (e.g., sync to another system)
+            print(f"Syncing new sale: {sale}")
+
+        if new_sales:
+            # Update the last_synced_at to the timestamp of the last sale processed
+            update_last_synced_at(cursor, new_sales[-1]['last_modified'])
+            conn.commit()
+            print("Sync completed successfully.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        cursor.close()
+        conn.close()
+
+if __name__ == "__main__":
+    main()
+```
+
+We can ensure minimal data transfer and also do the needed transformations before syncing the data to the other db.
