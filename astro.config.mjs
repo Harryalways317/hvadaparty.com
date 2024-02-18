@@ -8,7 +8,7 @@ import astroOGImage from "./plugins/og-image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://jakegut.com/",
+  site: "https://hvadaparty.com/",
   integrations: [
     tailwind({
       config: {

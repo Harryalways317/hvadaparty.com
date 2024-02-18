@@ -5,6 +5,8 @@ datetime: 2024-01-23T12:35:01.255Z
 draft: false
 tags:
   - docker
+  - serverless
+  
 ogImage: ""
 ---
 
