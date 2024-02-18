@@ -105,7 +105,7 @@ Resources:
   ExampleFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/exampleFunction
+      CodeUri: functions/Scraper
       Handler: app.lambdaHandler
       Runtime: *nodejsRuntime
       Architectures:
