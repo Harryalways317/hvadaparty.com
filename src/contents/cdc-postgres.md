@@ -3,6 +3,7 @@ title: "CDC Postgres"
 slug: cdc-postgres
 datetime: 2024-02-01T11:43:16.142Z
 draft: false
+type: post
 tags:
   - postgresql
   - cdc
@@ -175,3 +176,18 @@ if __name__ == "__main__":
 ```
 
 We can ensure minimal data transfer and also do the needed transformations before syncing the data to the other db.
+
+
+### Log-Based CDC with Kafka
+
+Using Kafka Connect for log-based CDC involves less intrusion, directly streaming database changes to Kafka.
+
+```json
+{
+  "name": "postgres-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "database.hostname": "localhost"
+  }
+}
+```

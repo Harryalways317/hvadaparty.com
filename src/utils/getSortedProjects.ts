@@ -1,11 +1,11 @@
 import type { MarkdownInstance } from "astro";
 import type { Frontmatter } from "../types";
 
-const getSortedPosts = (posts: MarkdownInstance<Frontmatter>[]) =>
+const getSortedProjects = (posts: MarkdownInstance<Frontmatter>[]) =>
   posts
     .filter(
       ({ frontmatter }) =>
-        (!frontmatter.draft || process.env.NODE_ENV != "production") && frontmatter.type === "post"
+        (!frontmatter.draft || process.env.NODE_ENV != "production") && frontmatter.type === "project"
     )
     .sort(
       (a, b) =>
@@ -13,4 +13,4 @@ const getSortedPosts = (posts: MarkdownInstance<Frontmatter>[]) =>
         Math.floor(new Date(a.frontmatter.datetime).getTime() / 1000)
     );
 
-export default getSortedPosts;
+export default getSortedProjects;

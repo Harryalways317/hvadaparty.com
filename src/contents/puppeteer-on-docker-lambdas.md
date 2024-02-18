@@ -3,6 +3,7 @@ title: Working with Puppeteer or Selenium on Docker and Lambdas
 slug: puppeteer-docker-lambda
 datetime: 2024-01-23T12:35:01.255Z
 draft: false
+type: post
 tags:
   - docker
   - serverless

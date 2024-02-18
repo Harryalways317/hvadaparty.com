@@ -7,6 +7,7 @@ export interface Frontmatter {
   slug: string;
   featured: boolean;
   draft: boolean;
+  type: "post" | "project";
   tags: string[];
 }
 
