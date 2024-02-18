@@ -116,6 +116,19 @@ Resources:
       MemorySize: 1024
 ```
 
+### Performance
+
+The performance of the headless browser in a serverless environment is not as good as running it on a dedicated server. This is because the serverless environment has a cold start time, which can be several seconds. This means that the first time you run the headless browser in a serverless environment, it will take longer to start up than subsequent runs. However, once the headless browser is running, it should perform reasonably well.
+
+Here is a basic invocation time taken by the lambda function
+
+**Initial Run** (Cold Start Effect)
+
+[![Invocation Time](../assets/images/chromium-initial-run.png)](../assets/images/chromium-initial-run.png)
+
+**Subsequent Runs**
+
+[![Invocation Time](../assets/images/chromium-second-run.png)](../assets/images/chromium-second-run.png)
 
 ## Puppeteer on Docker
 So, in docker, we can actually run chromium easier way, just few extra installations on docker file should be enough
@@ -206,3 +219,4 @@ await browser.close();
 
 return { result: 'success', browserVersion, pageTitle };
 ```
+
