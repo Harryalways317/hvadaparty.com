@@ -191,3 +191,7 @@ Using Kafka Connect for log-based CDC involves less intrusion, directly streamin
   }
 }
 ```
+
+### Using Solutions like Airbyte and PeerDB
+
+If you are doing this for a large amount of data and a lot of tables, you might want to use a solution like **Airbyte** or **PeerDB**. These tools are built to handle the complexities of CDC and data replication at scale, so you don't have to reinvent the wheel.
