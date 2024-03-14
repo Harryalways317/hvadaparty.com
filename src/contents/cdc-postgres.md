@@ -187,9 +187,18 @@ Using Kafka Connect for log-based CDC involves less intrusion, directly streamin
   "name": "postgres-connector",
   "config": {
     "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-    "database.hostname": "localhost"
+    "database.hostname": "localhost",
+    "database.port": "5432",
+    "database.user": "harry",
+    "database.password": "sorry_not_telling",
+    "database.dbname": "pg_prod",
+    "database.server.name": "camila1",
+    "table.include.list": "schema.transactions,schema.users",
+    "plugin.name": "pgoutput",
+    "snapshot.mode": "initial"
   }
 }
+
 ```
 
 ### Using Solutions like Airbyte and PeerDB
