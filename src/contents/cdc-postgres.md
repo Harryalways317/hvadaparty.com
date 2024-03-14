@@ -178,9 +178,10 @@ if __name__ == "__main__":
 We can ensure minimal data transfer and also do the needed transformations before syncing the data to the other db.
 
 
-### Log-Based CDC with Kafka
+### Log-Based CDC with Kafka with Debezium
 
 Using Kafka Connect for log-based CDC involves less intrusion, directly streaming database changes to Kafka.
+Debezium is a popular Kafka Connect plugin for CDC, and it's easy to set up with PostgreSQL. It is mostly used in microservices architecture, where we can have a service that listens to the kafka topic and then do the needed processing.
 
 ```json
 {
