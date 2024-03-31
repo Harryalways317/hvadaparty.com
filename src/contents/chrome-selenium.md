@@ -1,14 +1,26 @@
-To install Google Chrome and the necessary drivers for Selenium scraping on an EC2 instance running Ubuntu, you'll need to follow a few steps. This guide assumes you have an AWS EC2 instance running Ubuntu and you have SSH access to your instance. Here's a step-by-step guide:
+---
+title: "Setting up Selenium and Chrome on EC2"
+slug: chrome-selenium-ec2
+datetime: 2024-03-o1T16:13:06.242Z
+draft: false
+tags:
+  - selenium
+  - javascript
+  - ec2
+ogImage: ""
+---
+
+To install Google Chrome and the necessary drivers for Selenium scraping on an EC2 instance running Ubuntu, you'll need to follow a few steps. I'll just assume you have an AWS EC2 instance running Ubuntu and you have SSH access to your instance. Here's a step-by-step guide:
 
 ### Step 1: Connect to Your EC2 Instance
 
 First, you'll need to SSH into your EC2 instance. Open your terminal or command prompt and use the SSH command. You'll need the `.pem` key file and the public DNS or IP address of your EC2 instance.
 
 ```bash
-ssh -i /path/to/your-key.pem ubuntu@your-ec2-public-dns
+ssh -i ssh-key.pem ubuntu@instance-ip
 ```
 
-Replace `/path/to/your-key.pem` with the path to your PEM file, and `your-ec2-public-dns` with the public DNS or IP of your EC2 instance.
+Replace `ssh-key.pem` with the path to your PEM file, and `ec2-ip` with the public DNS or IP of your EC2 instance.
 
 ### Step 2: Update Your Package Lists
 
@@ -103,3 +115,6 @@ python3 test_selenium.py
 If everything is set up correctly, this script should print the title of the page without opening a graphical web browser.
 
 This setup will allow you to run Selenium with Chrome on your EC2 Ubuntu instance for web scraping or automated testing.
+
+
+I have wasted around 3 hours setting up chrome on EC2. Normally it works out of the box, but sometimes it will be a endless loop of issues we are solving, so if you are facing the issue, just clear every reference of the chrome in your instance and then follow this guide
