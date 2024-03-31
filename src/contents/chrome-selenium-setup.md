@@ -11,7 +11,7 @@ tags:
 ogImage: ""
 ---
 
-To install Google Chrome and the necessary drivers for Selenium scraping on an EC2 instance running Ubuntu, you'll need to follow a few steps. I'll just assume you have an AWS EC2 instance running Ubuntu and you have SSH access to your instance. Here's a step-by-step guide:
+To install Google Chrome and the necessary drivers for Selenium scraping on an EC2 instance running Ubuntu, you'll need to follow a few steps. I'll just assume you have an AWS EC2 instance running Ubuntu and you have SSH access to your instance. Here's a step-by-step guide that is tried and tested:
 
 ### Step 1: Connect to Your EC2 Instance
 
