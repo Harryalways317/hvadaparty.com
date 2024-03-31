@@ -65,3 +65,17 @@ But here’s the kicker: finetuning is a beast. It chews up a ton of memory and 
 - Fine-Tuning excels in depth within specific domains; RAG offers breadth and up-to-date info.
 - Fine-Tuning is resource-heavy; RAG requires maintaining a quality database.
 
+See the below for a clear understanding
+
+<div align="center">
+  <div style="width: 45%; display: inline-block; text-align: center; margin-right: 10px;">
+    <img src="https://media.licdn.com/dms/image/D5612AQEaLxSmNlyuRw/article-cover_image-shrink_720_1280/0/1698034765964?e=2147483647&v=beta&t=UulgBxg7xMuLUpKPuc_N6tPeFk6Z3h-wjFfaR9lpiWA" alt="Finetuning VS Rag" style="width: 100%;">
+    <p>Finetuning VS Rag</p>
+  </div>
+  <div style="width: 45%; display: inline-block; text-align: center; margin-left: 10px;">
+    <img src="https://miro.medium.com/v2/resize:fit:2000/1*kwJjmEEAp8iYVNIQuq94Fw.png" alt="Differences" style="width: 100%;">
+    <p>Venn</p>
+  </div>
+</div>
+
+
