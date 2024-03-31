@@ -2,7 +2,7 @@
 title: Komp Insight - Competation Analysis Intelligence
 slug: komp-insight
 datetime: 2024-02-18T16:13:06.242Z
-draft: true
+draft: false
 type: project
 tags:
   - open-ai
@@ -41,7 +41,6 @@ All the analyzed data and insights are neatly stored in MongoDB, ready for you t
 Let's talk results. Businesses using KompInsight Backend have seen a dramatic reduction in the time spent on competitive analysis. What used to take days now takes hours, with insights that are more accurate and actionable. But don't just take our word for it. Here's what one of our users had to say:
 
 > "KompInsight Backend transformed our approach to competitive analysis. It's like having an extra team member who works 24/7, digging up everything we need to know about our competitors. The insights we've gained have been a game-changer for our strategy meetings."
-
 ## Get Started
 
 Ready to revolutionize your competitive analysis process? Setting up KompInsight Backend is a breeze, and with Docker, you'll be up and running in no time. Dive into our [README.md](#) for detailed setup instructions and join the ranks of businesses making smarter, data-driven decisions.
