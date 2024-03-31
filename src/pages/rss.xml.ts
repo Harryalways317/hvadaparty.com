@@ -23,11 +23,11 @@ export const get = () =>
     items: posts
       .filter(({ frontmatter }) => !frontmatter.draft)
       .map(post => ({
-        link: slugify(post.frontmatter),
-        title: post.frontmatter.title,
-        content: sanitizeHtml(parser.render(post.rawContent())),
-        description: post.frontmatter.description,
-        pubDate: new Date(post.frontmatter.datetime),
+        link: slugify(post.frontmatter) ?? "",
+        title: post.frontmatter.title ?? "",
+        content: sanitizeHtml(parser.render(post.rawContent())) ?? "",
+        description: post.frontmatter.description ?? "",
+        pubDate: new Date(post.frontmatter.datetime) ?? "",
       })),
     // items: postImportResult,
   });
