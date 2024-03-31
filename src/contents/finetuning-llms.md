@@ -1,6 +1,6 @@
 ---
-title: Finetuning LLM's at 2x speed with UnSloth
-slug: finetuning-llm-unsloth
+title: Finetuning LLM's, Why?
+slug: finetuning-llms
 datetime: 2024-04-01T12:35:01.255Z
 draft: false
 type: post
