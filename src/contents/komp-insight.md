@@ -51,8 +51,6 @@ Curious about the tech stack powering KompInsight Backend? Here's a quick rundow
 - [Generation of Google vs Apple](/src/assets/documents/google%20vs%20apple.pdf)
 - [Generation of Mixpanel vs HotJar](/src/assets/documents/mixpanel%20and%20hotjar.pdf)
 - [Generation of Danswer vs Mistral](/src/assets/documents/danswer%20vs%20mistral.pdfs)
-- 
-
 
 
 ## Get Started
