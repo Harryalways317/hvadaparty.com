@@ -1,6 +1,6 @@
 ---
 title: Curate Sphere - Daily News Made Easy
-slug: komp-insight
+slug: curate-sphere
 datetime: 2024-03-29T16:13:06.242Z
 draft: false
 type: project
