@@ -48,9 +48,9 @@ Let's talk results. Businesses using KompInsight Backend have seen a dramatic re
 Curious about the tech stack powering KompInsight Backend? Here's a quick rundown:
 
 - [Sample Product Deck for Hot Jar](/posts/komp-insight-samples)
-- [Generation of Google vs Apple](/src/assets/documents/google_vs_apple.pdf)
-- [Generation of Mixpanel vs HotJar](/src/assets/documents/mixpanel_and_hotjar.pdf)
-- [Generation of Danswer vs Mistral](/src/assets/documents/danswer_vs_mistral.pdfs)
+- [Generation of Google vs Apple](/documents/google_vs_apple.pdf)
+- [Generation of Mixpanel vs HotJar](/documents/mixpanel_and_hotjar.pdf)
+- [Generation of Danswer vs Mistral](/documents/danswer_vs_mistral.pdfs)
 
 
 ## Get Started
