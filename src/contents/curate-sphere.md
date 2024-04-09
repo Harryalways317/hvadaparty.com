@@ -27,7 +27,7 @@ Now, I know what you're thinking: "Just summaries?" Ah, but we're not stopping t
 
 <div align="center">
   <div style="width: 100%; display: inline-block; text-align: center; margin-right: 10px;">
-    <img src="../assets/images/curate-sphere.png" alt="Daily Digests" style="width: 100%;">
+    <img src="/images/curate-sphere.png" alt="Daily Digests" style="width: 100%;">
     <p>Takeways on Articles that Matters</p>
   </div>
 </div>
@@ -38,7 +38,7 @@ Now, I know what you're thinking: "Just summaries?" Ah, but we're not stopping t
 
 <div align="center">
   <div style="width: 100%; display: inline-block; text-align: center; margin-right: 10px;">
-    <img src="../assets/images/curate-sphere-2.png" alt="Takeways on Articles that Matters" style="width: 100%;">
+    <img src="/images/curate-sphere-2.png" alt="Takeways on Articles that Matters" style="width: 100%;">
     <p>Takeways on Articles that Matters</p>
   </div>
 </div>

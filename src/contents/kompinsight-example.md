@@ -9,7 +9,8 @@ tags:
 ogImage: ""
 ---
 
-# Little Peek on what Komp Insight can do
+# Little Peek on what KompInsight can do
+## Everything below this is generated with KompInsight
 
 # Hot Jar Monitor Dock
 # Executive Intel
