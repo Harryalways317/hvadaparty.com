@@ -105,8 +105,21 @@
 
 \vspace{2pt}
 
+\resumeSubheading{{\bf OnFinance.ai}}{Bangalore, IN}
+{Backend and AI Engineer}{Apr. 2024 -- Present}
+
+\begin{list2}
+\item{Led the backend team, working with a cross-tech stack of GCP, Azure, Golang, Python with Gen AI App and multiple copilots}
+\item{Built data processing pipelines with queue-based systems for document processing, achieving a 70\% increase in speed and making the system fail-proof compared to previous implementations}
+\item{Developed and maintained Copilot backends for production clients such as Oister and Avendus}
+\item{Implemented RAG workflows and efficient retrieval mechanisms for data extraction from vector databases}
+\item{Designed the backend as a template-based system, reducing the configuration time for new client onboarding by 50\% }
+\item{Worked on DevOps tasks including resource management, CI/CD pipelines, and network and infrastructure setup}
+\item{Tech Stack: Python, Golang, Java, MongoDB, PostgreSQL, Kafka, Docker}
+\end{list2}
+
 \resumeSubheading{{\bf Hexon Labs}}{Bangalore, IN}
-                 {Software Engineer, Backend and Data}{Jul. 2022 -- Present}
+                 {Software Engineer, Backend and Data}{Jul. 2022 -- Apr. 2024}
 
 \begin{list2}
 \item{Led Backend Development to an established Grocery application with AWS backend, Node,Python and TypeScript}
@@ -127,22 +140,12 @@
 \item{Rewrote Modules of the app by caching and data reuse which improved performance by 40\%}
 \end{list2}
 
-\resumeSubheading{{\bf Futuryze Digital}}{Bangalore, IN}
-                 {Flutter Developer Intern}{June 2021 -- Jan 2022}
-
-\begin{list2}
-\item{Developed an EdTech platform with Flutter, GetX and Bloc, tailored for Learners and Creators }
-\item{Translated client needs and UX designs into functional app features, implementing API fetching and MVVM architecture and Multiple Modules like Quizzes, Video Content }
-\item{Managed multimedia data integration and implemented file uploads and error handling in the app. }
-\end{list2}
-
-
 % \vspace{0.15in}
 \section{\sc Education}
 
 \vspace{2pt}
 
-\resumeSubheading{Lendi Institute of Engineering and Techonology}{Vizag, IN}
+\resumeSubheading{Lendi Institute of Engineering and Techonology}{Vizianagaram, IN}
              {Bachelor of Techonology in Computer Science}{June 2022}
 
 \section{\sc Projects}
@@ -173,6 +176,29 @@
     \item Developed a comprehensive news summarization platform, CurateSphere, capable of condensing news articles into concise summaries of under 5 minutes reading time.
     \item Implemented a robust system for scraping and ingesting news content from diverse sources, utilizing Qdrant for storing article embeddings and appending succinct summaries (TLDR) to each article.
     \item Ranks news articles on a priority basis and selects top 10 articles based on score generated and summarizes them as top news.
+\end{list2}
+
+\resumeSubSubheading{\textbf{SnipShare}}
+{Java, Spring Boot, PostgreSQL}
+
+\begin{list2}
+    \item Created a minimalist web application inspired by pastebin, allowing users to save temporary text/snippets to share or reuse.
+    \item Implemented a backend with Spring Boot to manage text storage, generate unique shareable links, and handle link expiry.
+    \item Developed a simple frontend with HTML, CSS, and JavaScript, capturing the Ctrl + S event to trigger backend API calls for saving text.
+    \item Utilized PostgreSQL for efficient storage and retrieval of text entries and metadata.
+    \item Added functionality for generating unique, shareable links for each text entry, enabling access from any location.
+    \item Integrated link expiry mechanisms to enhance security by invalidating links after a specified period.
+\end{list2}
+
+\resumeSubSubheading{\textbf{Spot Instance Manager}}
+{Python, Fast API, PostgreSQL, boto3 sdk}
+
+\begin{list2}
+    \item Created a minimalist Spot Manager Application that manages spot instances from AWS with auto stop and auto start features.
+    \item Implemented a inferencing proxy for deployed models with VLLM that allocates a spot instance with desired AMI from existing pool of instances and start new instances based on availability
+    \item Uses boto sdk for getting details, status of instanaces and availability group and fleet allocation and synced it with local postgres and redis
+    \item Added functionality for supporting multiple AMI and instance types and fetching instance types from config file under single zone
+    \item Added multiple background cron jobs to stop unused instances and continous data sync between instance pool
 \end{list2}
 
 
